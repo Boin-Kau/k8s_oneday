@@ -67,9 +67,9 @@ kubectl get svc -n ingress-nginx
 
 13. 워커노드의 ip와 12과정에서 확인한 Nodeport를 확인하여 접근시도
 ```
-curl <worker ip>:<13에서 확인한 portnumber>
-curl <worker ip>:<13에서 확인한 portnumber>/customer
-curl <worker ip>:<13에서 확인한 portnumber>/schedule
+curl <worker ip>:<12에서 확인한 portnumber>
+curl <worker ip>:<12에서 확인한 portnumber>/customer
+curl <worker ip>:<12에서 확인한 portnumber>/schedule
 ```
 
 14. clear
