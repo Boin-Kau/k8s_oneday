@@ -22,6 +22,10 @@ sudo -i
 sudo hostnamectl set-hostname k8s-worker2
 sudo -i
 ```
+변경 확인 명령어
+```
+hostnamectl
+```
 
 2. kubeadm 초기화 (Master Node 만 진행)
 ```
