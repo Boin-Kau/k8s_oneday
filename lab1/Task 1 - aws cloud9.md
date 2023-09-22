@@ -22,7 +22,7 @@
 
 ![](./img/1-aws-cloud9-username.png)
 
-6. Configure settings 에서 Instance type 을 t3.small 을 선택하고, Platform의 Ubuntu server 선택 후 Next step 버튼을 클릭합니다.
+6. Configure settings 에서 Instance type 을 **t3.small** 을 선택하고, Platform의 **Ubuntu server** 선택 후 Next step 버튼을 클릭합니다.
 그리고 선택한 내용 확인 후 Create environment 버튼 클릭합니다.
 
 <br/>
