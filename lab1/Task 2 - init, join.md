@@ -40,6 +40,10 @@ kubeadm init 명령어는 Kubernetes 클러스터를 초기화하고 마스터 �
 출력결과(kubeadm join 이하 명령어)를 잘 저장해둡니다.
 3~5분 소요됩니다.
 ![](./img/3-kubeadm-init-result.png)
+```
+// 내 join 명령어
+
+```
 
 3. Master 노드 설정 (Master Node 만 진행)
 ```
@@ -48,6 +52,8 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
+kubeadm join 172.31.0.122:6443 --token oub1rs.ky85evocc4ppusw2 \
+        --discovery-token-ca-cert-hash sha256:2e497c4e03c3f4a6443d0070a34d451d0d3b477cfe499e8f5a12d914b5042d55
 ```
 **참고** 
 kubeadm은 클러스터 구성을 정의하는 구성 파일을 생성합니다. 이 파일에는 클러스터 설정, 네트워크 설정, 인증 설정 등이 포함됩니다.
