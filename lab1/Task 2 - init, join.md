@@ -61,6 +61,13 @@ kubectl create -f https://raw.githubusercontent.com/wsjang619/k8s_course/master/
 ![image](https://user-images.githubusercontent.com/92773629/218712109-bbb4fe31-ea4c-410b-8e98-c42c7aed2d61.png)
 
 참고링크 : https://github.com/flannel-io/flannel
+```
+**참고**
+kubectl create -f : Kubernetes 클러스터에 리소스를 생성하거나 업데이트하기 위해 사용되는 명령어
+```
+```
+flannel : Kubernetes 클러스터 내에서 Pod 간 통신을 관리하기 위한 네트워크 솔루션 
+```
 
 5. kubectl 자동완성 적용 (Master Node 만 진행)
 ```
