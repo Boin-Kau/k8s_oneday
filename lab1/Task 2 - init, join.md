@@ -31,6 +31,12 @@ hostnamectl
 ```
 kubeadm init --pod-network-cidr=172.16.0.0/16 --apiserver-advertise-address=<Master IP>
 ```
+```
+**참고**
+kubeadm init 명령어는 Kubernetes 클러스터를 초기화하고 마스터 노드를 설정하기 위해 사용되는 명령어입니다.
+이 명령어를 사용하면 새로운 Kubernetes 클러스터를 설정하고 실행할 수 있습니다.
+```
+
 출력결과(kubeadm join 이하 명령어)를 잘 저장해둡니다.
 3~5분 소요됩니다.
 ![](./img/3-kubeadm-init-result.png)
@@ -41,6 +47,11 @@ mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 export KUBECONFIG=/etc/kubernetes/admin.conf
+```
+```
+**참고** 
+kubeadm은 클러스터 구성을 정의하는 구성 파일을 생성합니다. 이 파일에는 클러스터 설정, 네트워크 설정, 인증 설정 등이 포함됩니다.
+기본적으로 /etc/kubernetes/admin.conf에 생성됩니다.
 ```
 
 4. flannel 네트워크 플러그인 설치 (Master Node 만 진행)
